@@ -1,13 +1,9 @@
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
-/*    Author:       VEX                                                       */
+/*    Author:       Eric Lind                                                 */
 /*    Created:      Wed Sep 25 2019                                           */
-/*    Description:  Clawbot Template (Drivetrain, No Gyro)                    */
-/*                                                                            */
-/*    Name:                                                                   */
-/*    Date:                                                                   */
-/*    Class:                                                                  */
+/*    Description:  MineField Robots (Potentiometer)                          */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 
@@ -33,7 +29,7 @@ bool isArm = false;
 #define POTLOW 80
 #define POTMID 150
 #define POTHIGH 235
-#define TYLER "idiot"
+#define ROBOTS "cool"
 
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
@@ -44,7 +40,7 @@ int main() {
   Controller1.ButtonUp.pressed(ArmHigh);
   Controller1.ButtonLeft.pressed(ArmHome);
 
-  while(TYLER == "idiot"){
+  while(ROBOTS == "cool"){
     Brain.Screen.print(Potentiometer.angle(degrees));
     Brain.Screen.clearScreen();
     Brain.Screen.newLine();
